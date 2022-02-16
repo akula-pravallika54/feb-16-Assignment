@@ -1,0 +1,25 @@
+def is_leap(year):
+    leap = False
+    
+    # Write your logic here
+    if year%4==0 and year%100!=0 or year%400==0:
+        leap=True
+    
+    return leap
+
+year = int(input())
+print(is_leap(year))
+OUTPUT:
+Input (stdin)
+1990
+Your Output (stdout)
+False
+Expected Output
+False
+-----------------------
+Compiler Message
+Success
+Input (stdin)
+2000
+Expected output
+True
